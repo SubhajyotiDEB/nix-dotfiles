@@ -34,6 +34,7 @@
        pkgs.gsettings-desktop-schemas
        pkgs.youtube-music
        pkgs.obsidian
+       pkgs.bitwarden-desktop
        
    # Niri dependencies
        pkgs.alacritty
