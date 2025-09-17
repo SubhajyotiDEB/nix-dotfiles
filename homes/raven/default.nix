@@ -35,6 +35,7 @@
        pkgs.youtube-music
        pkgs.obsidian
        pkgs.bitwarden-desktop
+       pkgs.uv
        
    # Niri dependencies
        pkgs.alacritty
@@ -43,18 +44,11 @@
        pkgs.swaybg
        pkgs.swaylock
        pkgs.font-awesome
-
-   # Python stuff
-       (pkgs.python311.withPackages (ps: with ps; [
-       ps.pip
-       ps.requests
-       ps.discordpy
-       ]))
-       pkgs.ffmpeg
        ];
+       
   # Fontconfig stuff.
   fonts.fontconfig.enable = true;
-
+  
   # Let home-manager update itself.
   programs.home-manager.enable = true;
 
@@ -72,5 +66,6 @@
       ./fish.nix
       ./flatpak.nix
       ./kdeconnect.nix
+      ./starship.nix
       ];
 }
