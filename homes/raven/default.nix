@@ -44,8 +44,16 @@
        pkgs.swaybg
        pkgs.swaylock
        pkgs.font-awesome
+
+   #LSP pkgs
+      pkgs.fish-lsp
+      pkgs.nixd
+      pkgs.simple-completion-language-server
+      pkgs.taplo
+      pkgs.vscode-langservers-extracted
+      pkgs.yaml-language-server
        ];
-       
+
   # Fontconfig stuff.
   fonts.fontconfig.enable = true;
   
