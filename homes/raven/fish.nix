@@ -40,7 +40,6 @@
     '';
     preferAbbrs = true;
     shellAbbrs = {
-      cd = "z";
       ns = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";
       cgh = {
         setCursor = "%";
