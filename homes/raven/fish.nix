@@ -34,6 +34,9 @@
       }
     ];
     interactiveShellInit = ''
+      functions -c cd builtin_cd 2>/dev/null
+      functions -e cd
+      functions -c cd builtin_cd cd 2>/dev/null
       set fish_greeting
       set -gx PATH $PATH $HOME/.local/bin
       echo && bat -p ~/.config/default/cat.txt -l nix
