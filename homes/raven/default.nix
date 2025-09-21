@@ -36,6 +36,7 @@
        pkgs.obsidian
        pkgs.bitwarden-desktop
        pkgs.uv
+       pkgs.bat
        
    # Niri dependencies
        pkgs.alacritty
