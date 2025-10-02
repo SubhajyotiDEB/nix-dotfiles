@@ -79,6 +79,5 @@
       ./kdeconnect.nix
       ./starship.nix
       ./git.nix
-      ./bat.nix
       ];
 }
