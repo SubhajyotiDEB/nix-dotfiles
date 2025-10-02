@@ -37,6 +37,8 @@
        pkgs.bitwarden-desktop
        pkgs.uv
        pkgs.bat
+       pkgs.git
+       pkgs.git-lfs
        
    # Niri dependencies
        pkgs.alacritty
@@ -76,5 +78,6 @@
       ./flatpak.nix
       ./kdeconnect.nix
       ./starship.nix
+      ./git.nix
       ];
 }
