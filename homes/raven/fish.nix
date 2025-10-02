@@ -40,6 +40,7 @@
       set fish_greeting
       set -gx PATH $PATH $HOME/.local/bin
       echo && bat -p ~/.config/default/cat.txt -l nix
+      set -gx PUFFER_NO_CD 1
     '';
     preferAbbrs = true;
     shellAbbrs = {
