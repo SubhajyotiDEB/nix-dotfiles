@@ -36,7 +36,6 @@
        pkgs.obsidian
        pkgs.bitwarden-desktop
        pkgs.uv
-       pkgs.bat
        pkgs.git
        pkgs.git-lfs
        
