@@ -38,6 +38,8 @@
        pkgs.uv
        pkgs.git
        pkgs.git-lfs
+       pkgs.steam
+       pkgs.bottles
        
    # Niri dependencies
        pkgs.alacritty
