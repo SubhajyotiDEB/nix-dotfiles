@@ -40,6 +40,7 @@
        pkgs.git-lfs
        pkgs.steam
        pkgs.bottles
+       pkgs.mprisence
        
    # Niri dependencies
        pkgs.alacritty
