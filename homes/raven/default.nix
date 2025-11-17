@@ -40,7 +40,6 @@
        pkgs.git-lfs
        pkgs.steam
        pkgs.bottles
-       pkgs.clematis
        
    # Niri dependencies
        pkgs.alacritty
