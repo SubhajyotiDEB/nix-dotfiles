@@ -40,7 +40,7 @@
        pkgs.git-lfs
        pkgs.steam
        pkgs.bottles
-       
+
    # Niri dependencies
        pkgs.alacritty
        pkgs.fuzzel
@@ -60,7 +60,7 @@
 
   # Fontconfig stuff.
   fonts.fontconfig.enable = true;
-  
+
   # Let home-manager update itself.
   programs.home-manager.enable = true;
 
@@ -81,5 +81,6 @@
       ./starship.nix
       ./git.nix
       ./direnv.nix
+      ./yazi.nix
       ];
 }
