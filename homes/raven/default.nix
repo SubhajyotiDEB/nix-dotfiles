@@ -80,5 +80,6 @@
       ./kdeconnect.nix
       ./starship.nix
       ./git.nix
+      ./direnv.nix
       ];
 }
