@@ -1,10 +1,14 @@
+{ pkgs, ... }:
+
 {
   programs.git = {
     enable = true;
     lfs.enable = true;
-    userName = "SubhajyotiDEB";
-    userEmail = "mrdeadlock8@gmail.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "SubhajyotiDEB";
+        email = "mrdeadlock8@gmail.com";
+      };
       init.defaultBranch = "main";
       url = {
         "git@github.com:".insteadOf = "gh:";
@@ -17,6 +21,12 @@
         showStash = true;
         showUntrackedFiles = true;
       };
+      rerere.enable = true;
+      column.ui = "auto";
+      branch.sort = "-committerdate";
     };
   };
+  home.packages = [
+    pkgs.git-branchless
+  ];
 }
