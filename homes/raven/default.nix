@@ -11,11 +11,11 @@
       accents = [ "mauve" ];
       winDecStyles = [ "classic" ];
     })
-       pkgs.helix
        pkgs.legcord
        pkgs-librewolf.librewolf
        pkgs.ghostty
        pkgs.zapzap
+       pkgs.duckdb
        pkgs.maple-mono.NF
        pkgs.nerd-fonts.jetbrains-mono
        pkgs.kdePackages.kconfig
@@ -41,6 +41,9 @@
    #LSP pkgs
       pkgs.fish-lsp
       pkgs.nixd
+      pkgs.nix-search-tv
+      pkgs.nixfmt-rfc-style
+      pkgs.nix-output-monitor
       pkgs.simple-completion-language-server
       pkgs.taplo
       pkgs.vscode-langservers-extracted
