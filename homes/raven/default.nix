@@ -1,4 +1,4 @@
-  { pkgs, ... }:
+  { pkgs, pkgs-librewolf, ... }:
 
 {
   # General home stuff.
@@ -13,14 +13,11 @@
     })
        pkgs.helix
        pkgs.legcord
-       pkgs.librewolf
+       pkgs-librewolf.librewolf
        pkgs.ghostty
        pkgs.zapzap
        pkgs.maple-mono.NF
        pkgs.nerd-fonts.jetbrains-mono
-       pkgs.kdePackages.kconfig
-       pkgs.kdePackages.karousel
-       pkgs.kdePackages.kde-gtk-config
        pkgs.kdePackages.kconfig
        pkgs.kdePackages.karousel
        pkgs.kdePackages.kde-gtk-config
@@ -40,14 +37,6 @@
        pkgs.git-lfs
        pkgs.steam
        pkgs.bottles
-
-   # Niri dependencies
-       pkgs.alacritty
-       pkgs.fuzzel
-       pkgs.waybar
-       pkgs.swaybg
-       pkgs.swaylock
-       pkgs.font-awesome
 
    #LSP pkgs
       pkgs.fish-lsp
