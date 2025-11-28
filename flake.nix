@@ -39,9 +39,7 @@
       };
       homeConfigurations.raven = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
+        extraSpecialArgs = { inherit pkgs-librewolf; };
         modules = [
         inputs.catppuccin.homeModules.catppuccin
         inputs.nix-flatpak.homeManagerModules.nix-flatpak
