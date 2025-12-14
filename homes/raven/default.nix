@@ -47,6 +47,14 @@
     pkgs.taplo
     pkgs.vscode-langservers-extracted
     pkgs.yaml-language-server
+
+    #Niri stuff
+    pkgs.alacritty
+    pkgs.fuzzel
+    pkgs.waybar
+    pkgs.mako
+    pkgs.grim
+    pkgs.slurp
   ];
 
   # Fontconfig stuff.
