@@ -1,3 +1,51 @@
+{ pkgs, ... }:
+
 {
-  programs.niri.enable = true;
+  programs.niri.config = null;
+  xdg.configFile."niri/config.kdl".source = ./niri/config.kdl;
+
+  programs.dankMaterialShell = {
+    enable = true;
+    niri = {
+      enableKeybinds = true;
+      enableSpawn = true;
+    };
+    enableSystemMonitoring = true;
+    enableVPN = true;
+    enableDynamicTheming = true;
+    enableAudioWavelength = true;
+    enableCalendarEvents = true;
+    plugins = {
+      displayMirror = {
+        enable = true;
+        src = builtins.fetchGit {
+          url = "https://github.com/debarchito/displayMirror";
+          ref = "main";
+          rev = "92cd44c4fb67834bf71fdd78f83c29df5e0750b2";
+        };
+      };
+      dockerManager = {
+        enable = true;
+        src = builtins.fetchGit {
+          url = "https://github.com/debarchito/dockerManager";
+          ref = "main";
+          rev = "860457bbb043a6651a2cbafe6e77d443123a0b07";
+        };
+      };
+      easyEffects = {
+        enable = true;
+        src = builtins.fetchGit {
+          url = "https://github.com/debarchito/easyEffects";
+          ref = "main";
+          rev = "ac2726063d308ef28c1704956564f013951e3a0a";
+        };
+      };
+    };
+  };
+
+  home.packages = [
+    pkgs.dsearch
+    pkgs.nautilus
+    pkgs.xwayland-satellite
+  ];
 }

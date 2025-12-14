@@ -34,8 +34,10 @@
     pkgs.uv
     pkgs.git
     pkgs.git-lfs
-    pkgs.steam
-    pkgs.bottles
+    (pkgs.bottles.override {
+      removeWarningPopup = true;
+    })
+    pkgs.wl-clipboard
 
     #LSP pkgs
     pkgs.fish-lsp
@@ -48,13 +50,6 @@
     pkgs.vscode-langservers-extracted
     pkgs.yaml-language-server
 
-    #Niri stuff
-    pkgs.alacritty
-    pkgs.fuzzel
-    pkgs.waybar
-    pkgs.mako
-    pkgs.grim
-    pkgs.slurp
   ];
 
   # Fontconfig stuff.
@@ -84,5 +79,6 @@
     ./eza.nix
     ./fzf.nix
     ./atuin.nix
+    ./niri.nix
   ];
 }
