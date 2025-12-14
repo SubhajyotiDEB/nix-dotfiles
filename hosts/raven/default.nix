@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ...} :
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   imports = [
@@ -23,8 +28,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.extraModprobeConfig = "options kvm_intel nested=1";
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.initrd.luks.devices."luks-899727ff-652c-474e-88dc-a8f7583978bc".device = "/dev/disk/by-uuid/899727ff-652c-474e-88dc-a8f7583978bc";
+  boot.kernelPackages = pkgs.linuxPackages_6_17;
+  boot.initrd.luks.devices."luks-899727ff-652c-474e-88dc-a8f7583978bc".device =
+    "/dev/disk/by-uuid/899727ff-652c-474e-88dc-a8f7583978bc";
 
   # Zram stuff.
   zramSwap.enable = true;
@@ -66,7 +72,6 @@
   pipewire.enable = true;
 
   # Display Manager stuff.
-  services.xserver.videoDrivers = [ "nvidia" ];
   services.displayManager.ly.enable = true;
   services.desktopManager.plasma6.enable = true;
   environment.plasma6.excludePackages = [
