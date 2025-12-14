@@ -14,36 +14,55 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
- };
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dgop = {
+      url = "github:AvengeMedia/dgop";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.dgop.follows = "dgop";
+    };
+  };
 
   outputs =
     { nixpkgs, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
-       pkgs = import inputs.nixpkgs {
+      pkgs = import inputs.nixpkgs {
         inherit system;
         overlays = [
           inputs.nur.overlays.default
         ];
-        };
-        pkgs-librewolf = import inputs.nixpkgs-librewolf {
-          inherit system;
-        };
+      };
+      pkgs-librewolf = import inputs.nixpkgs-librewolf {
+        inherit system;
+      };
     in
     {
-    nixosConfigurations.raven = inputs.nixpkgs.lib.nixosSystem {
+      nixosConfigurations.raven = inputs.nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
+          inputs.niri.nixosModules.niri
           ./hosts/raven
+          ./modules/games
+          ./modules/wm
         ];
       };
       homeConfigurations.raven = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit pkgs-librewolf; };
         modules = [
-        inputs.catppuccin.homeModules.catppuccin
-        inputs.nix-flatpak.homeManagerModules.nix-flatpak
-        ./homes/raven
+          inputs.catppuccin.homeModules.catppuccin
+          inputs.dankMaterialShell.homeModules.dankMaterialShell.default
+          inputs.niri.homeModules.niri
+          inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
+          inputs.nix-flatpak.homeManagerModules.nix-flatpak
+          ./homes/raven
         ];
       };
     };
