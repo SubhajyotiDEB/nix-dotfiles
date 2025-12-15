@@ -59,7 +59,7 @@
   # Miscellaneous stuff.
   common-settings.enable = true;
   common-settings.flake = "/home/raven/nix-config";
-  common-settings.gc.options = "--delete-older-than 7d";
+  common-settings.gc.options = "--delete-older-than 3d";
   trusted-substituters.enable = true;
   security.enable = true;
 
@@ -128,7 +128,11 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [
+      xdg-dekstop-portal-wlr
+      xdg-dekstop-portal-kde
+      xdg-desktop-portal-gtk
+    ];
     config.common.default = "*";
   };
 

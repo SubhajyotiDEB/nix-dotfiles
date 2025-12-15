@@ -1,8 +1,8 @@
-// include "dms/alttab.kdl";
-// include "dms/binds.kdl";
-// include "dms/colors.kdl";
-// include "dms/layout.kdl";
-// include "dms/wpblur.kdl";
+ include "dms/alttab.kdl";
+ include "dms/binds.kdl";
+ include "dms/colors.kdl";
+ include "dms/layout.kdl";
+ include "dms/wpblur.kdl";
 
 // environment {
 //   QT_QPA_PLATFORMTHEME "qt6ct"
@@ -27,12 +27,12 @@ input {
     focus-follows-mouse max-scroll-amount="0%"
 }
 
-// output "eDP-2" {
-//     mode "1920x1080@120.015"
-//     scale 1.20
-// }
+ output "eDP-1" {
+     mode "1920x1080@120.015"
+     scale 1.20
+ }
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-pablenderth "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 layout {
     gaps 16
