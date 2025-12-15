@@ -12,8 +12,8 @@
     };
     enableSystemMonitoring = true;
     enableVPN = true;
-    enableDynamicTheming = true;
     enableAudioWavelength = true;
+    enableDynamicTheming = true;
     enableCalendarEvents = true;
     plugins = {
       displayMirror = {
