@@ -129,8 +129,7 @@
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
-      xdg-dekstop-portal-wlr
-      xdg-dekstop-portal-kde
+      xdg-desktop-portal-wlr
       xdg-desktop-portal-gtk
     ];
     config.common.default = "*";

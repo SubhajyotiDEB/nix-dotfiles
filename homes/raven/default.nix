@@ -38,8 +38,6 @@
       removeWarningPopup = true;
     })
     pkgs.wl-clipboard
-    pkgs.blender
-    pkgs.obs-studio
 
     #LSP pkgs
     pkgs.fish-lsp
