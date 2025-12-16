@@ -38,7 +38,10 @@
       removeWarningPopup = true;
     })
     pkgs.wl-clipboard
+
+    #Rust pkgs
     pkgs.rustup
+    pkgs.gcc
 
     #LSP pkgs
     pkgs.fish-lsp
