@@ -32,7 +32,7 @@ input {
      scale 1.20
  }
 
-screenshot-pablenderth "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 layout {
     gaps 16
