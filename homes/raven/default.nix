@@ -38,6 +38,7 @@
       removeWarningPopup = true;
     })
     pkgs.wl-clipboard
+    pkgs.rustup
 
     #LSP pkgs
     pkgs.fish-lsp
