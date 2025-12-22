@@ -12,7 +12,6 @@
       winDecStyles = [ "classic" ];
     })
     pkgs.legcord
-    pkgs-librewolf.librewolf
     pkgs.zapzap
     pkgs.duckdb
     pkgs.maple-mono.NF
@@ -84,5 +83,6 @@
     ./fzf.nix
     ./atuin.nix
     ./niri.nix
+    ./librewolf.nix
   ];
 }
