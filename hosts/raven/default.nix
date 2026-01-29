@@ -132,12 +132,13 @@
       xdg-desktop-portal-wlr
       xdg-desktop-portal-gtk
     ];
-    config.common.default = "*";
   };
 
   # Variables stuff.
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
+    XDG_CURRENT_DESKTOP = "wlroots";
+    XDG_SESSION_TYPE = "wayland";
     ZED_WINDOW_DECORATIONS = "server";
     SIGNAL_PASSWORD_STORE = "kwallet6";
   };
