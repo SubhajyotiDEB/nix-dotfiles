@@ -28,7 +28,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.extraModprobeConfig = "options kvm_intel nested=1";
-  boot.kernelPackages = pkgs.linuxPackages_6_17;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.initrd.luks.devices."luks-899727ff-652c-474e-88dc-a8f7583978bc".device =
     "/dev/disk/by-uuid/899727ff-652c-474e-88dc-a8f7583978bc";
 

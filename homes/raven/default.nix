@@ -27,7 +27,7 @@
     pkgs.qbittorrent
     pkgs.catppuccinifier-cli
     pkgs.gsettings-desktop-schemas
-    pkgs.youtube-music
+    pkgs.pear-desktop
     pkgs.obsidian
     pkgs.bitwarden-desktop
     pkgs.uv
@@ -46,13 +46,12 @@
     pkgs.fish-lsp
     pkgs.nixd
     pkgs.nix-search-tv
-    pkgs.nixfmt-rfc-style
+    pkgs.nixfmt
     pkgs.nix-output-monitor
     pkgs.simple-completion-language-server
     pkgs.taplo
     pkgs.vscode-langservers-extracted
     pkgs.yaml-language-server
-
   ];
 
   # Fontconfig stuff.

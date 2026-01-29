@@ -102,39 +102,30 @@
           color = "orange";
           icon = "fence";
         };
-        "Social Media" = {
-          id = 3;
-          color = "yellow";
-          icon = "circle";
-        };
       };
       containersForce = true;
       bookmarks = {
         force = true;
         settings = [
           {
-            name = "redlib.";
-            url = "https://redlib.tiekoetter.com";
+            name = "MATHS 2";
+            url = "https://onlinecourses.nptel.ac.in/noc26_ma37/unit?unit=18&lesson=21";
           }
           {
-            name = "Nitter";
-            url = "https://nitter.tiekoetter.com";
+            name = "PSUC";
+            url = "https://onlinecourses.nptel.ac.in/noc26_cs53/unit?unit=17&lesson=18";
           }
           {
-            name = "Invidious";
-            url = "https://invidious.tiekoetter.com";
+            name = "BET";
+            url = "https://onlinecourses.nptel.ac.in/noc26_ee30/unit?unit=16&lesson=17";
           }
           {
-            name = "Nix Channel Status";
-            url = "https://status.nixos.org";
+            name = "BE";
+            url = "https://onlinecourses.swayam2.ac.in/ntr26_ed85/course";
           }
           {
-            name = "GitHub";
-            url = "https://github.com/debarchito";
-          }
-          {
-            name = "Codeberg";
-            url = "https://codeberg.org/debarchito";
+            name = "EVS";
+            url = "https://onlinecourses.swayam2.ac.in/cec26_es01/course";
           }
         ];
       };
