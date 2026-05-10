@@ -38,11 +38,11 @@
     })
     pkgs.wl-clipboard
 
-    #Rust pkgs
+    # Rust pkgs
     pkgs.rustup
     pkgs.gcc
 
-    #LSP pkgs
+    # LSP pkgs
     pkgs.fish-lsp
     pkgs.nixd
     pkgs.nix-search-tv
@@ -67,7 +67,7 @@
   catppuccin.enable = true;
   catppuccin.flavor = "mocha";
 
-  #Modules
+  # Modules
   imports = [
     ./ghostty.nix
     ./helix.nix

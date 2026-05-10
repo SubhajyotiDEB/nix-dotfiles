@@ -27,6 +27,6 @@
     };
   };
   home.packages = [
-    pkgs.git-branchless
+    #pkgs.git-branchless
   ];
 }
