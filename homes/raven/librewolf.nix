@@ -4,7 +4,7 @@
   programs.librewolf = {
     enable = true;
     nativeMessagingHosts = [
-      pkgs.kdePackages.plasma-browser-integration
+      #pkgs.kdePackages.plasma-browser-integration
       pkgs.tridactyl-native
     ];
     profiles.default = {

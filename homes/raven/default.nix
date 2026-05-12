@@ -19,7 +19,7 @@
     pkgs.kdePackages.kconfig
     pkgs.kdePackages.karousel
     pkgs.kdePackages.kde-gtk-config
-    pkgs.libreoffice-qt-fresh
+    #pkgs.libreoffice-qt-fresh
     pkgs.signal-desktop
     pkgs.unzip
     pkgs.unrar

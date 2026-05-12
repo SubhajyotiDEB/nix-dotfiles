@@ -37,6 +37,12 @@
         inherit system;
         overlays = [
           inputs.nur.overlays.default
+
+          (final: prev: {
+            openldap = prev.openldap.overrideAttrs (old: {
+              doCheck = false;
+            });
+          })
         ];
       };
       pkgs-librewolf = import inputs.nixpkgs-librewolf {
@@ -66,4 +72,5 @@
         ];
       };
     };
+
 }
