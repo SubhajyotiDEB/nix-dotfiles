@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 ## 0. Showcase (dell-laptop)
 
 ![showcase (dell-laptop)](/media/one.png)
@@ -31,7 +32,7 @@ Clone this repository to `~/.dotfiles`. This is the assumption throughout the
 steps.
 
 ```
-git clone https://github.com/debarchito/.dotfiles ~/.dotfiles
+git clone https://github.com/SubhajyotiDEB/.dotfiles ~/.dotfiles
 ```
 
 Fresh installs generate their fresh `/etc/nixos/hardware-configuration.nix`.
@@ -95,13 +96,13 @@ This repo also contains a templating engine alongside tailored development
 templates. Get started using:
 
 ```fish
-nix run github:debarchito/.dotfiles#generate
+nix run github:SubhajyotiDEB/.dotfiles#generate
 ```
 
 Initialize a template (e.g Rust) using:
 
 ```fish
-nix run github:debarchito/.dotfiles#generate rust ./hello-world name="hello-world" description="Say hello to the world!"
+nix run github:SubhajyotiDEB/.dotfiles#generate rust ./hello-world name="hello-world" description="Say hello to the world!"
 ```
 
 Then run using:
@@ -112,9 +113,10 @@ nix run ./hello-world
 
 ## 4. Licensing
 
-The repository is licensed under the [zlib](/LICENSE) license unless stated
-otherwise.
-=======
+# The repository is licensed under the [zlib](/LICENSE) license unless stated otherwise.
+
 # nix-dotfiles
-nix .()dotfiles of  and for my setup
+
+nix .()dotfiles of and for my setup
+
 >>>>>>> b72e31496ec1aef00c30f936f42417023c323deb
