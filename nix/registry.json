@@ -1,0 +1,1 @@
+{"flakes":[{"exact":true,"from":{"id":"nixpkgs","type":"indirect"},"to":{"path":"/nix/store/bgl6ldj5ihbwcq8p42z3a0qzgqafgk2b-source","type":"path"}}],"version":2}

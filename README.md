@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 0. Showcase (dell-laptop)
 
 ![showcase (dell-laptop)](/media/one.png)
@@ -113,3 +114,7 @@ nix run ./hello-world
 
 The repository is licensed under the [zlib](/LICENSE) license unless stated
 otherwise.
+=======
+# nix-dotfiles
+nix .()dotfiles of  and for my setup
+>>>>>>> b72e31496ec1aef00c30f936f42417023c323deb
