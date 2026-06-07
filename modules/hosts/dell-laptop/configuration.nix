@@ -18,12 +18,12 @@ in
       self.modules.nixos.options-packaging
       self.modules.nixos.options-gaming
       self.modules.nixos."hosts-${name}"
-      self.modules.nixos.users-debarchito
+      self.modules.nixos.users-raven
     ];
   };
 
   flake.modules.nixos."hosts-${name}" = {
-    system.stateVersion = "24.11";
+    system.stateVersion = "26.05";
 
     nixpkgs.config.allowUnfree = true;
 

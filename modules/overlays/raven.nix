@@ -9,7 +9,7 @@
       };
     };
 
-  flake.modules.nixos.users-debarchito = moduleWithSystem (
+  flake.modules.nixos.users-raven = moduleWithSystem (
     { self', ... }:
     {
       nixpkgs.overlays = [
@@ -23,7 +23,7 @@
     }
   );
 
-  flake.modules.homeManager.users-debarchito = moduleWithSystem (
+  flake.modules.homeManager.users-raven = moduleWithSystem (
     { self', ... }:
     {
       nixpkgs.overlays = [

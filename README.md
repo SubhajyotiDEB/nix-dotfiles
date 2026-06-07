@@ -47,7 +47,7 @@ temporarily:
 
 ```fish
 cd ~/.dotfiles
-run0 nixos-rebuild switch --flake .#<host> \
+run0 nixos-rebuild switch --flake .#dell-laptop \
   --option experimental-features \
     'nix-command flakes' \
   --option extra-substituters \

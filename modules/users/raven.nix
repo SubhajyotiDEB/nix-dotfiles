@@ -6,8 +6,8 @@
   ...
 }:
 let
-  username = "debarchito";
-  description = "Debarchito Nath";
+  username = "raven";
+  description = "raven";
 in
 {
   flake-file.inputs.nix-alien = {
@@ -26,7 +26,7 @@ in
         "libvirtd"
         "networkmanager"
         "wheel"
-        "wireshark"
+        # "wireshark"
       ];
     };
 
@@ -46,29 +46,22 @@ in
         settings.AllowUsers = [ username ];
       };
       openvpn.enable = true;
-      wireshark.enable = true;
+      # wireshark.enable = true;
     };
 
     media = {
       routing.enable = true;
       bluetooth.enable = true;
-      optimizations.enable = true;
-      streaming.server = {
-        enable = true;
-        autostart = false;
-      };
+      # optimizations.enable = true;
+      # streaming.server = {
+      #   enable = true;
+      #   autostart = false;
+      # };
     };
     hardware.bluetooth.settings.Policy.AutoEnable = false;
 
     containers'.enable = true;
-    virtualisation = {
-      containers.storage.settings = {
-        storage.driver = "btrfs";
-      };
-      podman.defaultNetwork.settings = {
-        dns_enabled = true;
-      };
-    };
+    virtualisation.podman.defaultNetwork.settings.dns_enabled = true;
 
     virtualisation' = {
       qemu = {
@@ -76,7 +69,7 @@ in
         runAsRoot = true;
         manager.enable = true;
       };
-      waydroid.enable = true;
+      # waydroid.enable = true;
     };
 
     desktop = {
@@ -111,7 +104,7 @@ in
         self.modules.homeManager.options-packaging
         self.modules.homeManager."users-${username}"
         {
-          home.stateVersion = "24.11";
+          home.stateVersion = "26.05";
 
           nixpkgs.config.allowUnfree = true;
         }
@@ -146,20 +139,17 @@ in
           builtins.attrValues {
             inherit (pkgs)
               android-tools
-              aseprite
               bibata-cursors
               blender
               bottles
               duckdb
               ffmpeg
               generate
-              krita
               libqalculate
               libreoffice-qt-fresh
               nix-alien
               nix-output-monitor
               nix-prefetch-github
-              numbat
               pear-desktop
               pika-backup
               qbittorrent
@@ -178,7 +168,6 @@ in
                 ;
             }
           ));
-        file.".julia/config/startup.jl".source = ../scripts/julia/startup.jl;
         activation.plasma-application-menu = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
           XDG_MENU_PREFIX=plasma- ${pkgs.kdePackages.kservice}/bin/kbuildsycoca6 --noincremental
         '';
@@ -207,7 +196,7 @@ in
         zed-editor.enable = true;
       };
 
-      media.daw.enable = true;
+      # media.daw.enable = true;
 
       packaging.flatpak.enableEssentials = true;
 
@@ -218,15 +207,15 @@ in
         git = {
           settings = {
             user = {
-              name = "Debarchito Nath";
-              email = "debarchiton@proton.me";
+              name = "Subhajyoti Deb";
+              email = "mrdeadlock8@gmail.com";
             };
             url = {
               "git@github.com:".insteadOf = "gh:";
               "git@gitlab.com:".insteadOf = "gl:";
               "git@codeberg.org:".insteadOf = "cb:";
-              "git@github.com:debarchito/".insteadOf = "me@gh:";
-              "git@codeberg.org:debarchito/".insteadOf = "me@cb:";
+              "git@github.com:SubhajyotiDEB/".insteadOf = "me@gh:";
+              "git@codeberg.org:SubhajyotiDEB/".insteadOf = "me@cb:";
             };
           };
           signing = {
@@ -282,8 +271,8 @@ in
         # terminal.common.enable -> jujutsu.enable
         jujutsu.settings = {
           user = {
-            name = "Debarchito Nath";
-            email = "debarchiton@proton.me";
+            name = "Subhajyoti Deb";
+            email = "mrdeadlock8@gmail.com";
           };
           signing = {
             backend = "ssh";
@@ -310,7 +299,7 @@ in
           };
         };
 
-        nushell.enable = true;
+        # nushell.enable = true;
 
         nix-search-tv.enable = true;
 
@@ -325,7 +314,7 @@ in
         rbw = {
           enable = true;
           settings = {
-            email = "debarchitonath@gmail.com";
+            email = "mrdeadlock8@gmail.com";
             pinentry = pkgs.pinentry-dms;
           };
         };
@@ -345,12 +334,12 @@ in
         games = {
           minecraft.enable = true;
           genshin-impact.enable = true;
-          honkai-star-rail.enable = true;
+          # honkai-star-rail.enable = true;
         };
-        emulators = {
-          wiiu.enable = true;
-          switch.enable = true;
-        };
+        # emulators = {
+        #   wiiu.enable = true;
+        #   switch.enable = true;
+        # };
       };
     };
 }
