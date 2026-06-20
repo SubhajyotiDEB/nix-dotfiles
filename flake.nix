@@ -64,9 +64,9 @@
         extraSpecialArgs = { inherit pkgs-librewolf; };
         modules = [
           inputs.catppuccin.homeModules.catppuccin
-          inputs.dankMaterialShell.homeModules.dankMaterialShell.default
+          inputs.dankMaterialShell.homeModules.dank-material-shell
           inputs.niri.homeModules.niri
-          inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
+          inputs.dankMaterialShell.homeModules.niri
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
           ./homes/raven
         ];
