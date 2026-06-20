@@ -141,11 +141,11 @@
                 }
                 {
                   name = "GitHub";
-                  url = "https://github.com/debarchito";
+                  url = "https://github.com/SubhajyotiDEB";
                 }
                 {
-                  name = "Codeberg";
-                  url = "https://codeberg.org/debarchito";
+                  # name = "Codeberg";
+                  # url = "https://codeberg.org/<host>";
                 }
                 {
                   name = "CryptPad";
@@ -207,7 +207,7 @@
 
         home = {
           file.".librewolf/default/chrome".source = pkgs.fetchFromGitHub {
-            owner = "debarchito";
+            owner = "raven";
             repo = "parfait";
             rev = "2b9055cce370f93b508a2d1e6797708ebb7b59f8";
             hash = "sha256-kXKebHw7UrtP7bXw9uk3IfFZTdjfd2RR5WrXGjJnmig=";

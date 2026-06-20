@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-librewolf.url = "github:nixos/nixpkgs?rev=7a3eeaaac65d8a99b6bdcc79aa5082c80050f992";
+    nixpkgs-librewolf.url = "github:NixOS/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
     catppuccin.url = "github:catppuccin/nix";
     home-manager = {
