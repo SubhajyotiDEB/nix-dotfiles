@@ -5,6 +5,7 @@
     enable = true;
     enableFishIntegration = true;
     enableNushellIntegration = true;
+    shellWrapperName = "yy";
     plugins = {
       full-border = pkgs.yaziPlugins.full-border;
       git = pkgs.yaziPlugins.git;
