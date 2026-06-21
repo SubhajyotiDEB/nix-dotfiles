@@ -188,7 +188,7 @@ in
 
       browsers = {
         helium.enable = true;
-        librewolf.enable = true;
+        librewolf.enable = false;
       };
 
       editors = {
