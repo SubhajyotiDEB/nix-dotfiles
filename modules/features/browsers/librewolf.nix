@@ -101,18 +101,13 @@
             containers = {
               "Personal" = {
                 id = 1;
-                color = "purple";
+                color = "red";
                 icon = "fingerprint";
               };
               "College" = {
                 id = 2;
-                color = "orange";
+                color = "blue";
                 icon = "fence";
-              };
-              "Social Media" = {
-                id = 3;
-                color = "yellow";
-                icon = "circle";
               };
             };
             containersForce = true;
@@ -170,6 +165,10 @@
                 {
                   name = "Nixpkgs Pull Request Tracker";
                   url = "https://nixpk.gs/pr-tracker.html";
+                }
+                {
+                  name = "Nix Discussion Forum";
+                  url = "https://discourse.nixos.org";
                 }
               ];
             };
